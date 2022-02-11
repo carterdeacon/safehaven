@@ -33,8 +33,6 @@ Our team approached this project by first mapping out our application wireframe 
 
 ![](https://i.imgur.com/9Q66fB1.png)
 
-(Data)[goes here]
-
 We then created a Trello board of features and split them into categories of features that we must have, vs features that would be nice to have once we'd reached our MVP.
 
 We broke down our app into components to build and split into teams for pair programming: 
