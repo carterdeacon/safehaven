@@ -70,7 +70,7 @@ function ShowMap({lat, lng, zoomValue}) {
     }
   
     return (
-      <div style={{ height: "50vh", width: "100%" }}>
+      <div className="map" style={{ height: "50vh", width: "100%"}}>
         <GoogleMapReact
           bootstrapURLKeys={{
             key: process.env.REACT_APP_GOOGLE_MAPS_API

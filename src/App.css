@@ -41,16 +41,13 @@ ul {
   background-color: #f98919;
 }
 
-nav li {
-  float: right;
-}
-
 li a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -70,7 +67,7 @@ li a:hover {
   height: 40px;
 }
 
-ul {
+nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -93,24 +90,22 @@ ul {
 }
 
 .search-icon{
-  border-radius: 60px;
   border: none;
   margin: 5px;
   width: 30px;
   height: 30px;
-  display: flex;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .safehaven-search-bar-container{
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
 }
 
 .location-searching {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  width: 100%;
 }
 
 h1 {

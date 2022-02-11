@@ -20,6 +20,8 @@ Safehaven is a full stack application built with:
 - AXIOS
 - MUI REACT LIBRARY 
 
+Our server was hosted on a seperate repo, you can view that [here](https://github.com/Hughsin23/safehaven-server).
+
 
 # OUR APPROACH
 
