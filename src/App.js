@@ -27,13 +27,10 @@ function App() {
 
   return (
     <div className="App">
-      <nav>
+      <nav className="nav">
         <ul>
           <li>
-            <a href="/"><img src={homelogo} alt="" /></a> 
-          </li>
-          <li>
-            <img className="search-icon" src={searchIcon} alt="Logo" />  
+            <a href="/"><img className="home-logo"src={homelogo} alt="" /></a> 
           </li>
           <li>
             <button className="report-btn">
@@ -44,16 +41,21 @@ function App() {
       </nav>
 
       <div>
-        <a href="/"><img src={logo} alt="" /></a>
+        <a href="/"><img  className="main-logo" src={logo} alt="" /></a>
       </div>
       
       <Routes> 
         <Route path='/' element={<>
           <Home />
-          <LocationSearchBar 
+          <div className="location-searching">
+          <img className="search-icon" src={searchIcon} alt="Logo" />
+          <div className="safehaven-search-bar-container">
+          <LocationSearchBar
             passZoomData={setZoom} 
             passLngData={setLocationLng} 
             passLatData={setLocationLat}/>
+            </div>
+            </div>
           <ShowMap 
             zoomValue={zoom} 
             lat={locationLat} 

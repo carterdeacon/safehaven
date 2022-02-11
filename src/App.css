@@ -9,6 +9,13 @@
   height: 15vmin;
   pointer-events: none;
   padding: 10px;
+  width: 80%;
+}
+
+.main-logo {
+  height: 15vmin;
+  pointer-events: none;
+  padding: 10px;
 }
 
 .App-header {
@@ -51,13 +58,33 @@ li a:hover {
   text-decoration: underline;
 }
 
+.nav{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+
+.home-logo{
+  width: 40px;
+  height: 40px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-between;
+}
+
 .report-btn{
   font-family: 'Quicksand', sans-serif;
   font-size: 13px;
   background-color: white;
   border-radius: 60px;
   border: none;
-  margin: 5px;
+  margin: 15px;
 }
 
 .report-btn a{
@@ -70,8 +97,20 @@ li a:hover {
   border: none;
   margin: 5px;
   width: 30px;
+  height: 30px;
   display: flex;
   padding-top: 10px;
+}
+
+.safehaven-search-bar-container{
+  width: 100%;
+}
+
+.location-searching {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 h1 {
