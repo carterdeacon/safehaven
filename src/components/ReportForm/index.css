@@ -19,10 +19,11 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 10px;
 }
 
 
-.location-search-bar {
+.location-bar {
     display: inline;
     margin: 0 auto;
     height: 20px;
@@ -63,11 +64,15 @@ body {
 
 .location-search-bar {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .location-list:hover {
     background-color: linen;
     transition: all 0.3s linear;
 
+}
+
+.recapcha {
+    margin: 10px;
 }

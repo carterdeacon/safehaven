@@ -47,15 +47,17 @@ function App() {
       <Routes> 
         <Route path='/' element={<>
           <Home />
-          <div className="location-searching">
-          <img className="search-icon" src={searchIcon} alt="Logo" />
           <div className="safehaven-search-bar-container">
-          <LocationSearchBar
-            passZoomData={setZoom} 
-            passLngData={setLocationLng} 
-            passLatData={setLocationLat}/>
-            </div>
-            </div>
+            <img className="search-icon" src={searchIcon} alt="Logo" />
+          <div className="location-searching">
+            <LocationSearchBar
+              passZoomData={setZoom} 
+              passLngData={setLocationLng} 
+              passLatData={setLocationLat}/>
+            </div>  
+          </div>
+
+
           <ShowMap 
             zoomValue={zoom} 
             lat={locationLat} 
@@ -68,7 +70,7 @@ function App() {
             zoomValue={zoom} 
             lat={locationLat} 
             lng={locationLng}/> </>}
-          />
+            />
         <Route path="/resources" element={ <Resources /> } />
       </Routes>
     </div>

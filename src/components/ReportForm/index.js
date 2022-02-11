@@ -91,7 +91,7 @@ export default function ReportForm() {
 
                             <label className="input-box" htmlFor="">Location
                                 <LocationSearchBar 
-                                    className="location-search-bar" 
+                                    className="location-bar" 
                                     passLngData={setLng} 
                                     passLatData={setLat}/>
                             </label>
@@ -104,7 +104,7 @@ export default function ReportForm() {
                         </Stack>
                     </LocalizationProvider>
                     
-                    <ReCAPTCHA sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" onChange={captchaChange} />
+                    <ReCAPTCHA className="recapcha" sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" onChange={captchaChange} />
                  
                     <button className="submit-btn" onClick={submitReport}>Submit report</button>
 
