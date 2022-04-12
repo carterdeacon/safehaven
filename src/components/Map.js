@@ -64,7 +64,7 @@ function ShowMap({lat, lng, zoomValue}) {
       botLat: mapNew.marginBounds.sw.lat,
       botLng: mapNew.marginBounds.sw.lng,
     }
-    fetch(`http://localhost:8000/api/reports?topLat=${corners.topLat}&topLng=${corners.topLng}&botLat=${corners.botLat}&botLng=${corners.botLng}`)
+    fetch(`/api/reports?topLat=${corners.topLat}&topLng=${corners.topLng}&botLat=${corners.botLat}&botLng=${corners.botLng}`)
       .then(res => res.json())
       .then(res => setMarkers(res))
     }

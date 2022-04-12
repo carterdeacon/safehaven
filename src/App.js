@@ -3,7 +3,7 @@ import searchIcon from './search.png'
 import './App.css';
 import ShowMap from './components/Map.js';
 import ReportForm from './components/ReportForm'
-import {Routes, Route, Link} from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 import Resources from './components/Resources'
 import LocationSearchBar from "./components/ReportForm/LocationSearchBar"
 import {useState} from 'react'
@@ -34,7 +34,7 @@ function App() {
           </li>
           <li>
             <button className="report-btn">
-              <a href="/reports/new">Report Incident</a>
+              <Link to="/reports/new">Report Incident</Link>
             </button>
           </li>
         </ul>

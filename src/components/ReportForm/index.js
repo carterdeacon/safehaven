@@ -38,7 +38,7 @@ export default function ReportForm() {
         const dateToString = format(dateTime, 'yyyy-MM-dd');
         const timeToString = format(dateTime, "HH:mm");
 
-        let url = "http://localhost:8000/api/reports"
+        let url = "/api/reports"
         axios.post(url, {
             email: email,
             lat: lat,
@@ -49,7 +49,7 @@ export default function ReportForm() {
         })
             .then(response => {
                 if (response.data.redirect == "/resources"){
-                     window.location="/resources"
+                     window.location="/#/resources"
                 }
             })
             .catch(error => console.log(error))
